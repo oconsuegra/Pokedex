@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-family: 'Oswald', sans-serif, Arial, Helvetica;
+    transition: all ease 1s;
+}
+
+header {
+    padding: 20px;
+    background-color: #232323;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+body {
+    background-image: url('./img/body_bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-evenly;
+    padding: 80px 250px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0);
+    width: 230px;
+    border: 1px solid;
+    gap: 20px;
+    border-radius: 20px;
+}
+
+.tarjeta{
+    width: 230px;
+    background-color:rgb(121, 148, 153);
+    border-radius: 20px;
+    border: 1px solid;
+    transition: ease all 0.4s;
+}
+
+.tarjeta :is(:hover, :focus){
+    transform:scale(1.1);
+}
+
+.border{
+    border-radius: 20px;
+}
+
+.numero{
+    position: relative;
+    height: 175px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(61, 61, 61);
+    font-family:fantasy;
+    opacity: 1;
+    text-align: center;
+    font-size: 90px;
+}
+
+.imagen{
+    width: 180px;
+    position: absolute;
+    top: 40px;
+    left: 35px;
+}
+
+.informacion{
+    padding: 0px 10px;
+    font-size: 14px;
+    margin-top: 10px;
+}
+#tipo{
+    margin-right: 40px;
+}
+
+h5{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+#acolor{
+    background-image: url(./Img/rayo.jpg);
+    padding: 2px 5px;
+}
+#bcolor{
+    background-image: url(./Img/fondo\ agua.gif);
+    padding: 2px 5px;
+}
+#ccolor{
+    background-image: url(./Img/fondo\ fuego.gif);
+    padding: 2px 5px;   
+}
+#dcolor{
+    background-color: grey;
+    padding: 2px 5px;
+}
+#ecolor{
+    background-color: greenyellow;
+    padding: 2px 5px;
+}
+#fcolor{
+    background-color: rosybrown;
+    padding: 2px 5px;
+}
+#gcolor{
+    background-color: green;
+    padding: 2px 5px;
+}
+#hcolor{
+    background-color: violet;
+    padding: 2px 5px;
+}
+#icolor{
+    background-color: rgb(211, 43, 43);
+    padding: 2px 5px;
+}
+.horizontal{
+    background-image: url(./Img/fondo\ viol.gif);
+    padding: 10px;
+    width: 700px;
+    height: 350px;
+    display:flex;
+    gap: 20px;
+    overflow-x: scroll;
+    border-radius: 10px;
+    align-items: center;  
+}
+main div::-webkit-scrollbar{
+    height: 15px;
+}
+
+main div::-webkit-scrollbar-thumb{
+    background-image: url(./Img/fondo\ fuego.gif);
+    border-radius: 5px;
+}
